@@ -40,6 +40,14 @@ $user = $result->fetch_assoc();
                 <label for="email">Email:</label>
                 <input type="email" name="email" id="email" class="form-control" value="<?php echo $user['email']; ?>" required>
             </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="phone" name="phone" id="phone" class="form-control" value="<?php echo $user['phone']; ?>" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="address" name="address" id="address" class="form-control" value="<?php echo $user['phone']; ?>" required>
+            </div>
             <button type="submit" class="btn btn-primary">Update User</button>
         </form>
     </div>
