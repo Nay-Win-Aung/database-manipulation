@@ -13,14 +13,17 @@ $result = $conn->query($sql);
 </head>
 <body>
     <div class="container">
-        <h1>Users</h1>
-        <a href="create.php" class="btn btn-primary">Add User</a>
+        <h1>Ko Nay Win Aung's Contact</h1>
+        <a href="create.php" class="btn btn-primary">Add Contact</a>
         <table class="table">
             <thead>
                 <tr>
                     <th>ID</th>
                     <th>Name</th>
                     <th>Email</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                    <th>Note</th>
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -30,6 +33,9 @@ $result = $conn->query($sql);
                         <td><?php echo $row['id']; ?></td>
                         <td><?php echo $row['name']; ?></td>
                         <td><?php echo $row['email']; ?></td>
+                        <td><?php echo $row['phone']; ?></td>
+                        <td><?php echo $row['address']; ?></td>
+                        <td><?php echo $row['note']; ?></td>
                         <td>
                             <a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-secondary">Edit</a>
                             <a href="delete.php?id=<?php echo $row['id']; ?>" class="btn btn-danger">Delete</a>
